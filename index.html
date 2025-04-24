@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anime Ranking</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+  <style>
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #111;
+    color: #f1f1f1;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  .navbar {
+    background-color: #000;
+  }
+  .navbar-brand span {
+    color: #f44336;
+    font-weight: bold;
+  }
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #000; /* stalna crna pozadina */
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.9;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none;
+  color: #fff;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+  .fullscreen-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    border-radius: 50%;
+    padding: 8px 10px;
+    color: #fff;
+    z-index: 10;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  @media (max-width: 768px) {
+  .carousel-inner img {
+    height: 240px;
+}
+
+@media (min-width: 769px) {
+  .carousel-inner img {
+    height: 320px;
+ }
+  .hero {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 2.8rem;
+    color: #ff4081;
+  }
+  .hero p {
+    font-size: 1.2rem;
+    color: #ccc;
+    max-width: 800px;
+    margin: 20px auto 0;
+  }
+  section {
+    scroll-margin-top: 100px;
+  }
+  .scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+  }
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#"><span>Anime</span> Ranking</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#list">Top 10</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero" id="hero">
+  <div class="container">
+    <h1>Top 10 Most Watched & Popular Anime Franchises of All Time</h1>
+    <p>Explore the most iconic anime series that shaped generations, broke viewership records, and defined the genre globally.</p>
+  </div>
+</section>
+<!-- Anime #1 – Dragon Ball -->
+<section id="list" class="py-5" style="background-color: #1c1c1c;">
+  <div class="container">
+    <h2 class="text-center mb-4 text-danger"><i class="bi bi-star-fill me-2"></i>#1: Dragon Ball</h2>
+    <div class="row align-items-center g-4">
+      <div class="col-md-6">
+        <!-- Carousel -->
+        <div id="carouselDragonBall" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+              <a href="images/dragonball1.jpg" class="glightbox" data-gallery="dragonball"><img src="dragonball1.jpg" class="d-block w-100" alt="Dragon Ball 1"></a>
+            </div>
+            <div class="carousel-item">
+              <a href="images/dragonball2.jpg" class="glightbox" data-gallery="dragonball"><img src="dragonball2.jpg" class="d-block w-100" alt="Dragon Ball 2"></a>
+            </div>
+            <div class="carousel-item">
+              <a href="images/dragonball3.jpg" class="glightbox" data-gallery="dragonball"><img src="dragonball3.png" class="d-block w-100" alt="Dragon Ball 3"></a>
+            </div>
+          </div>
+          <!-- Carousel Controls sa ikonama -->
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselDragonBall" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon"><i class="bi bi-chevron-left"></i></span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselDragonBall" data-bs-slide="next">
+  <span class="carousel-control-next-icon"><i class="bi bi-chevron-right"></i></span>
+</button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <p><strong>Years:</strong> 1986 – Present</p>
+        <p><strong>Total Episodes:</strong> 800+ (combined across DB, DBZ, Super, GT)</p>
+        <p><strong>About:</strong> One of the most influential anime franchises in history. Dragon Ball follows Goku’s journey from childhood to universal battles. Its cultural impact, unforgettable characters, and long-lasting popularity make it the most watched anime globally.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Anime #2 – One Piece -->
+<section class="py-5" style="background-color: #1b1b1b;">
+  <div class="container">
+    <h2 class="text-center mb-4 text-warning"><i class="bi bi-compass-fill me-2"></i>#2: One Piece</h2>
+    <div class="row align-items-center g-4">
+      <div class="col-md-6">
+        <!-- Carousel -->
+        <div id="carouselOnePiece" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+              <a href="images/onepiece1.jpg" class="glightbox" data-gallery="onepiece"><img src="onepiece1.jpg" class="d-block w-100" alt="One Piece 1"></a>
+            </div>
+            <div class="carousel-item">
+              <a href="images/onepiece2.jpg" class="glightbox" data-gallery="onepiece"><img src="onepiece2.jpg" class="d-block w-100" alt="One Piece 2"></a>
+            </div>
+            <div class="carousel-item">
+              <a href="images/onepiece3.jpg" class="glightbox" data-gallery="onepiece"><img src="onepiece3.png" class="d-block w-100" alt="One Piece 3"></a>
+            </div>
+          </div>
+         <!-- Carousel Controls sa ikonama -->
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselOnePiece" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon"><i class="bi bi-chevron-left"></i></span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselOnePiece" data-bs-slide="next">
+  <span class="carousel-control-next-icon"><i class="bi bi-chevron-right"></i></span>
+</button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <p><strong>Years:</strong> 1999 – Present</p>
+        <p><strong>Total Episodes:</strong> 1,100+ (still ongoing)</p>
+        <p><strong>About:</strong> One Piece tells the epic tale of Monkey D. Luffy and his pirate crew in search of the ultimate treasure. Known for its emotional depth, world-building, and unmatched longevity, it holds a record for the most manga volumes sold worldwide.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Anime #3 – Naruto -->
+<section class="py-5" style="background-color: #212121;">
+  <div class="container">
+    <h2 class="text-center mb-4 text-warning"><i class="bi bi-fire me-2"></i>#3: Naruto</h2>
+    <div class="row align-items-center g-4">
+      <div class="col-md-6">
+        <!-- Carousel -->
+        <div id="carouselNaruto" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+              <a href="images/naruto1.jpg" class="glightbox" data-gallery="naruto"><img src="naruto1.jpg" class="d-block w-100" alt="Naruto 1"></a>
+            </div>
+            <div class="carousel-item">
+              <a href="images/naruto2.jpg" class="glightbox" data-gallery="naruto"><img src="naruto2.jpg" class="d-block w-100" alt="Naruto 2"></a>
+            </div>
+            <div class="carousel-item">
+              <a href="images/naruto3.jpg" class="glightbox" data-gallery="naruto"><img src="naruto3.jpg" class="d-block w-100" alt="Naruto 3"></a>
+            </div>
+          </div>
+        <!-- Carousel Controls sa ikonama -->
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselNaruto" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon"><i class="bi bi-chevron-left"></i></span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselNaruto" data-bs-slide="next">
+  <span class="carousel-control-next-icon"><i class="bi bi-chevron-right"></i></span>
+</button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <p><strong>Years:</strong> 2002 – 2017</p>
+        <p><strong>Total Episodes:</strong> 720 (220 in Naruto, 500 in Naruto: Shippuden)</p>
+        <p><strong>About:</strong> Naruto follows the journey of a young ninja, Naruto Uzumaki, as he seeks recognition and dreams of becoming the Hokage. With deep themes of friendship, struggle, and redemption, it grew into one of the most beloved anime series worldwide.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Anime #4 – Attack on Titan -->
+<section class="py-5" style="background-color: #1b1b1b;">
+  <div class="container">
+    <h2 class="text-center mb-4 text-danger"><i class="bi bi-shield-shaded me-2"></i>#4: Attack on Titan</h2>
+    <div class="row align-items-center g-4">
+      <div class="col-md-6">
+        <!-- Carousel -->
+        <div id="carouselAOT" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+              <a href="images/aot1.jpg" class="glightbox" data-gallery="aot"><img src="aot1.jpg" class="d-block w-100" alt="Attack on Titan 1"></a>
+            </div>
+            <div class="carousel-item">
+              <a href="images/aot2.jpg" class="glightbox" data-gallery="aot"><img src="aot2.jpg" class="d-block w-100" alt="Attack on Titan 2"></a>
+            </div>
+            <div class="carousel-item">
+              <a href="images/aot3.jpg" class="glightbox" data-gallery="aot"><img src="aot3.jpg" class="d-block w-100" alt="Attack on Titan 3"></a>
+            </div>
+          </div>
+        <!-- Carousel Controls sa ikonama -->
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselAOT" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon"><i class="bi bi-chevron-left"></i></span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselAOT" data-bs-slide="next">
+  <span class="carousel-control-next-icon"><i class="bi bi-chevron-right"></i></span>
+</button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <p><strong>Years:</strong> 2013 – 2023</p>
+        <p><strong>Total Episodes:</strong> 87</p>
+        <p><strong>About:</strong> In a world ravaged by giant man-eating Titans, humanity fights for survival behind massive walls. Eren Yeager and his friends join the military to uncover the truth and reclaim freedom. Known for its intense story, plot twists, and philosophical depth, AoT became a global sensation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Anime #5 – Pokémon -->
+<section class="py-5" style="background-color: #141414;">
+  <div class="container">
+    <h2 class="text-center mb-4 text-warning"><i class="bi bi-lightning-charge-fill me-2"></i>#5: Pokémon</h2>
+    <div class="row align-items-center g-4">
+      <div class="col-md-6">
+        <!-- Carousel -->
+        <div id="carouselPokemon" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+              <a href="images/pokemon1.jpg" class="glightbox" data-gallery="pokemon"><img src="pokemon1.png" class="d-block w-100" alt="Pokémon 1"></a>
+            </div>
+            <div class="carousel-item">
+              <a href="images/pokemon2.jpg" class="glightbox" data-gallery="pokemon"><img src="pokemon2.jpg" class="d-block w-100" alt="Pokémon 2"></a>
+            </div>
+            <div class="carousel-item">
+              <a href="images/pokemon3.jpg" class="glightbox" data-gallery="pokemon"><img src="pokemon3.jpg" class="d-block w-100" alt="Pokémon 3"></a>
+            </div>
+          </div>
+          <!-- Carousel Controls sa ikonama -->
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselPokemon" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon"><i class="bi bi-chevron-left"></i></span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselPokemon" data-bs-slide="next">
+  <span class="carousel-control-next-icon"><i class="bi bi-chevron-right"></i></span>
+</button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <p><strong>Years:</strong> 1997 – Present</p>
+        <p><strong>Total Episodes:</strong> 1200+</p>
+        <p><strong>About:</strong> Pokémon follows Ash Ketchum on his journey to become a Pokémon Master. With global influence across games, merchandise, and media, it’s one of the most recognizable anime franchises in the world — capturing generations with its charm and sense of adventure.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Anime #6 – Death Note -->
+<section class="py-5" style="background-color: #1b1b1b;">
+  <div class="container">
+    <h2 class="text-center mb-4 text-danger"><i class="bi bi-journal-richtext me-2"></i>#6: Death Note</h2>
+    <div class="row align-items-center g-4">
+      <div class="col-md-6">
+        <!-- Carousel -->
+        <div id="carouselDeathNote" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+              <a href="images/deathnote1.jpg" class="glightbox" data-gallery="deathnote"><img src="deathnote1.jpg" class="d-block w-100" alt="Death Note 1"></a>
+            </div>
+            <div class="carousel-item">
+              <a href="images/deathnote2.jpg" class="glightbox" data-gallery="deathnote"><img src="deathnote2.jpg" class="d-block w-100" alt="Death Note 2"></a>
+            </div>
+            <div class="carousel-item">
+              <a href="images/deathnote3.jpg" class="glightbox" data-gallery="deathnote"><img src="deathnote3.jpg" class="d-block w-100" alt="Death Note 3"></a>
+            </div>
+          </div>
+         <!-- Carousel Controls sa ikonama -->
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselDeathNote" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon"><i class="bi bi-chevron-left"></i></span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselDeathNote" data-bs-slide="next">
+  <span class="carousel-control-next-icon"><i class="bi bi-chevron-right"></i></span>
+</button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <p><strong>Years:</strong> 2006 – 2007</p>
+        <p><strong>Total Episodes:</strong> 37</p>
+        <p><strong>About:</strong> When genius student Light Yagami discovers a notebook that can kill anyone whose name is written in it, he sets out to create a new world free of crime — but is met with the mysterious detective L. A gripping psychological thriller that blurs the line between justice and madness.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Anime #7 – Demon Slayer -->
+<section class="py-5" style="background-color: #1a1a1a;">
+  <div class="container">
+    <h2 class="text-center mb-4 text-danger"><i class="bi bi-fire me-2"></i>#7: Demon Slayer</h2>
+    <div class="row align-items-center g-4">
+      <div class="col-md-6">
+        <!-- Carousel -->
+        <div id="carouselDemonSlayer" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+              <a href="images/demonslayer1.jpg" class="glightbox" data-gallery="demonslayer"><img src="demonslayer1.jpg" class="d-block w-100" alt="Demon Slayer 1"></a>
+            </div>
+            <div class="carousel-item">
+              <a href="images/demonslayer2.jpg" class="glightbox" data-gallery="demonslayer"><img src="demonslayer2.jpg" class="d-block w-100" alt="Demon Slayer 2"></a>
+            </div>
+            <div class="carousel-item">
+              <a href="images/demonslayer3.jpg" class="glightbox" data-gallery="demonslayer"><img src="demonslayer3.jpg" class="d-block w-100" alt="Demon Slayer 3"></a>
+            </div>
+          </div>
+         <!-- Carousel Controls sa ikonama -->
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselDemonSlayer" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon"><i class="bi bi-chevron-left"></i></span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselDemonSlayer" data-bs-slide="next">
+  <span class="carousel-control-next-icon"><i class="bi bi-chevron-right"></i></span>
+</button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <p><strong>Years:</strong> 2019 – Present</p>
+        <p><strong>Total Episodes:</strong> 55+ (ongoing)</p>
+        <p><strong>About:</strong> Tanjiro Kamado becomes a demon slayer after his family is slaughtered by demons and his sister Nezuko is turned into one. Known for its breathtaking animation and emotional storytelling, Demon Slayer became a cultural phenomenon in Japan and worldwide.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Anime #8 – Sword Art Online -->
+<section class="py-5" style="background-color: #212121;">
+  <div class="container">
+    <h2 class="text-center mb-4 text-primary"><i class="bi bi-controller me-2"></i>#8: Sword Art Online</h2>
+    <div class="row align-items-center g-4">
+      <div class="col-md-6">
+        <!-- Carousel -->
+        <div id="carouselSAO" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+              <a href="images/sao1.jpg" class="glightbox" data-gallery="sao"><img src="sao1.jpg" class="d-block w-100" alt="Sword Art Online 1"></a>
+            </div>
+            <div class="carousel-item">
+              <a href="images/sao2.jpg" class="glightbox" data-gallery="sao"><img src="sao2.jpg" class="d-block w-100" alt="Sword Art Online 2"></a>
+            </div>
+            <div class="carousel-item">
+              <a href="images/sao3.jpg" class="glightbox" data-gallery="sao"><img src="sao3.jpg" class="d-block w-100" alt="Sword Art Online 3"></a>
+            </div>
+          </div>
+          <!-- Carousel Controls sa ikonama -->
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselSAO" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon"><i class="bi bi-chevron-left"></i></span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselSAO" data-bs-slide="next">
+  <span class="carousel-control-next-icon"><i class="bi bi-chevron-right"></i></span>
+</button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <p><strong>Years:</strong> 2012 – Present</p>
+        <p><strong>Total Episodes:</strong> 96+</p>
+        <p><strong>About:</strong> Set in a virtual MMORPG where players are trapped and death in-game means death in real life, SAO follows Kirito’s journey through several game worlds. A blend of romance, action, and futuristic storytelling made this series extremely popular among younger audiences.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Anime #9 – My Hero Academia -->
+<section class="py-5" style="background-color: #1e1e1e;">
+  <div class="container">
+    <h2 class="text-center mb-4 text-success"><i class="bi bi-shield-shaded me-2"></i>#9: My Hero Academia</h2>
+    <div class="row align-items-center g-4">
+      <div class="col-md-6">
+        <!-- Carousel -->
+        <div id="carouselMHA" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+              <a href="images/mha1.jpg" class="glightbox" data-gallery="mha"><img src="mha1.jpg" class="d-block w-100" alt="My Hero Academia 1"></a>
+            </div>
+            <div class="carousel-item">
+              <a href="images/mha2.jpg" class="glightbox" data-gallery="mha"><img src="mha2.jpg" class="d-block w-100" alt="My Hero Academia 2"></a>
+            </div>
+            <div class="carousel-item">
+              <a href="images/mha3.jpg" class="glightbox" data-gallery="mha"><img src="mha3.jpg" class="d-block w-100" alt="My Hero Academia 3"></a>
+            </div>
+          </div>
+         <!-- Carousel Controls sa ikonama -->
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselMHA" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon"><i class="bi bi-chevron-left"></i></span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselMHA" data-bs-slide="next">
+  <span class="carousel-control-next-icon"><i class="bi bi-chevron-right"></i></span>
+</button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <p><strong>Years:</strong> 2016 – Present</p>
+        <p><strong>Total Episodes:</strong> 140+</p>
+        <p><strong>About:</strong> In a world where nearly everyone has a superpower known as a “quirk,” Izuku Midoriya is born without one. His journey to become the greatest hero is both emotional and action-packed. A massive hit globally, especially among younger anime fans and comic book lovers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Anime #10 – Bleach -->
+<section class="py-5" style="background-color: #0f172a;">
+  <div class="container">
+    <h2 class="text-center mb-4 text-primary"><i class="bi bi-droplet-half me-2"></i>#10: Bleach</h2>
+    <div class="row align-items-center g-4">
+      <div class="col-md-6">
+        <!-- Carousel -->
+        <div id="carouselBleach" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+              <a href="images/bleach1.jpg" class="glightbox" data-gallery="bleach"><img src="bleach1.jpg" class="d-block w-100" alt="Bleach 1"></a>
+            </div>
+            <div class="carousel-item">
+              <a href="images/bleach2.jpg" class="glightbox" data-gallery="bleach"><img src="bleach2.jpg" class="d-block w-100" alt="Bleach 2"></a>
+            </div>
+            <div class="carousel-item">
+              <a href="images/bleach3.jpg" class="glightbox" data-gallery="bleach"><img src="bleach3.png" class="d-block w-100" alt="Bleach 3"></a>
+            </div>
+          </div>
+         <!-- Carousel Controls sa ikonama -->
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselBleach" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon"><i class="bi bi-chevron-left"></i></span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselBleach" data-bs-slide="next">
+  <span class="carousel-control-next-icon"><i class="bi bi-chevron-right"></i></span>
+</button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <p><strong>Years:</strong> 2004 – 2012 / 2022 – Present</p>
+        <p><strong>Total Episodes:</strong> 390+ (including Thousand-Year Blood War arc)</p>
+        <p><strong>About:</strong> Ichigo Kurosaki accidentally obtains the powers of a Soul Reaper — a celestial being who protects the living world from evil spirits. With epic sword fights, soul society lore, and comeback arcs, Bleach holds a legendary status in anime history.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Contact -->
+<section class="py-5" id="contact" style="background-color: #111827; color: #e0e0e0;">
+  <div class="container text-center">
+    <h2 class="mb-4 text-primary"><i class="bi bi-envelope-paper-heart me-2"></i>Contact</h2>
+    <p class="lead mb-4">Have suggestions or want to share your top anime? Reach out via email:</p>
+    <p>
+      <i class="bi bi-envelope-fill me-2 text-primary"></i>
+      <a href="mailto:mahir.webdev@gmail.com" style="color: #90caf9;">mahir.webdev@gmail.com</a>
+    </p>
+    <p class="mt-4 fst-italic text-light-emphasis">
+      Built with passion and love for anime culture.
+    </p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-light text-center py-3">
+  <p class="mb-0">© 2025 Anime Ranking. All rights reserved.</p>
+</footer>
+
+<!-- Scroll to Top -->
+<a href="#hero" class="btn btn-primary scroll-top">
+  <i class="bi bi-arrow-up"></i>
+</a>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+  const lightbox = GLightbox({ selector: '.glightbox' });
+
+  const OFFSET_Y = 100;
+  function scrollToTargetWithOffset(targetSelector) {
+    const element = document.querySelector(targetSelector);
+    if (!element) return;
+    const y = element.getBoundingClientRect().top + window.pageYOffset - OFFSET_Y;
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  }
+
+  document.querySelectorAll('.nav-link[href^="#"]').forEach(link => {
+    link.addEventListener('click', function(e) {
+      const target = this.getAttribute('href');
+      const navbarCollapse = document.querySelector('.navbar-collapse');
+      const navbarToggler = document.querySelector('.navbar-toggler');
+      if (navbarCollapse.classList.contains('show')) {
+        navbarToggler.click();
+      }
+      setTimeout(() => scrollToTargetWithOffset(target), 300);
+      e.preventDefault();
+    });
+  });
+</script>
